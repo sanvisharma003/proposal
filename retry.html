@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retry</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center everything */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Try to say no once more</h1>
+        <div class="gif-container">
+            <!-- Tenor GIF Embed Code -->
+            <div class="tenor-gif-embed" data-postid="16711378101172719071" data-share-method="host" data-aspect-ratio="1" data-width="250px">
+                <a href="https://tenor.com/view/mischievous-naughty-bad-rebel-smirk-gif-16711378101172719071">Mischievous Naughty GIF</a>from <a href="https://tenor.com/search/mischievous-gifs">Mischievous GIFs</a>
+            </div> 
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        <div class="proposal-buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton" onmouseover="changePosition()">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('yesButton').addEventListener('click', function() {
+            // Redirect to newpage.html when Yes button is clicked
+            window.location.href = "newpage.html";
+        });
+    </script>
+    <script>
+        function changePosition() {
+            var noButton = document.getElementById('noButton');
+            noButton.style.position = 'absolute';
+            var newX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+            var newY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+            noButton.style.left = newX + 'px';
+            noButton.style.top = newY + 'px';
+        }
+    </script>
+</body>
+</html>

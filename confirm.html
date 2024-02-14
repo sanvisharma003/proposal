@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center everything */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are you sure? Nahi manega? Last time soch le!</h1>
+        <div class="gif-container">
+            <!-- Tenor GIF Embed Code -->
+            <div class="tenor-gif-embed" data-postid="15195810" data-share-method="host" data-aspect-ratio="1" data-width="250px">
+                <a href="https://tenor.com/view/couple-forgive-me-asking-for-forgiveness-begging-crying-gif-15195810">Couple Forgive Me Sticker</a>from <a href="https://tenor.com/search/couple-stickers">Couple Stickers</a>
+            </div> 
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        <div class="proposal-buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Get the no button from the document
+        const noButton = document.getElementById('noButton');
+
+        // Add event listener for the no button
+        noButton.addEventListener('click', function() {
+            // Redirect to retry.html when No button is clicked again
+            window.location.href = "retry.html";
+        });
+    </script>
+</body>
+</html>

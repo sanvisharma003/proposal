@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Proposal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Additional inline CSS for centering the GIF */
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Will You Be My Valentine?</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Huhh Dakshaa darling?</h2>
+            
+            <div class="gif-container">
+                <!-- Tenor GIF Embed Code -->
+                <div class="tenor-gif-embed" data-postid="26055804" data-share-method="host" data-aspect-ratio="1.15523" data-width="200px">
+                    <a href="https://tenor.com/view/where-wally-gif-26055804">Where Wally GIF</a>from
+                    <a href="https://tenor.com/search/where-gifs">Where GIFs</a>
+                </div> 
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+            <div class="proposal-buttons">
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Yours and Yours</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+        // Get the no button from the document
+        const noButton = document.getElementById('noButton');
+
+        // Add event listener for the no button
+        noButton.addEventListener('click', function() {
+            // Redirect to confirm.html when No button is clicked
+            window.location.href = "confirm.html";
+        });
+    </script>
+</body>
+</html>
+
